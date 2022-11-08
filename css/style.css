@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap");
+
+body {
+	font-family: "Lato";
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+[class*="__container"]{
+	max-width: 1275px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* !====================================================================== */
+
+.page {
+	margin-top: 20px;
+}
+
+.question-page {
+}
+
+.question-page__body {
+	display: flex;
+}
+.question-page__image{
+	/* align-self: center; */
+	flex: 1 1 auto;
+	margin-top: 60px;
+}
+.question-page__image img {
+	width: 100%;
+}
+
+.question-page__form {
+	margin-left: 105px;
+}
+.form-question {
+	flex: 1 1 60%;
+}
+.form-question__label {
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	line-height: 150%;
+	color: #1E212C;
+}
+.form-question__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+}
+.form-question__title:not(:last-child){
+	margin-bottom: 40px;
+}
+.form-question__form  {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 25px;
+	row-gap: 24px;
+}
+
+.form-question__line {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 48.2%;
+	/* margin-bottom: 24px; */
+}
+
+.form-question__line label {
+	color: #424551;
+	margin-bottom: 8px;
+}
+.form-question__input {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+.form-question__input ::placeholder{
+	line-height: 160%;
+	color: #9A9CA5;
+}
+.form-question__line-message {
+	display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+
+}
+.form-question__line-message:not(:last-child){
+	margin-bottom: 48px;
+}
+.form-question__line-message label {
+	line-height: 160%;
+	color: #424551;
+	margin-bottom: 8px;
+}
+.form-question__line-textarea {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	width: 100%;
+	min-height: 160px;
+	padding-top: 13px;
+	padding-left: 16px;
+	resize: none;
+}
+
+/* !=================================   CHECKBOX   ===================================== */
+
+.form-question__checkbox {
+	position: relative;
+	display: flex;
+	flex: 0 1 50%;
+}
+.checkbox__input {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+.checkbox__label {
+	cursor: pointer;
+	display: inline-flex;
+	gap: 12px;
+	
+}
+.checkbox__input:checked + .checkbox__label::before {
+	background:#F75E05 url('../img/check.svg') center / 70% no-repeat;
+}
+.checkbox__label::before{
+	content:"";
+	flex: 0 0 16px;
+	width: 16px;
+	height: 16px;
+	border-radius: 5px;
+	background-color: #FF3F3A;
+}
+.checkbox__text {
+	line-height: 160%;
+	color: #424551;
+}
+
+/* !==============================   BUTTON   ======================================== */
+
+.form-question__button {
+	margin-left: 37px;
+}
+.button {
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	padding: 16px 100px;
+	color: #FFFFFF;
+}
+.form-question__button:hover {
+	transform: scale(1.01);
+	transition: all 0.3s ease 0s;
+}

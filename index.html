@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__question question-page">
+				<div class="question-page__container">
+					<div class="question-page__body">
+						<div class="question-page__image">
+							<img src="img/illustration.svg" alt="Image">
+						</div>
+						<div class="question-page__form form-question">
+							<div class="form-question__label">Any questions?</div>
+							<div class="form-question__title">
+								<h1>Drop us a line</h1>
+							</div>
+							<form class="form-question__form" action="#">
+								<div class="form-question__line">
+									<label for="firstname">First Name*</label>
+									<input id="firstname" required autocomplete="off" type="text" name="firstname"
+										placeholder="Your first name" class="form-question__input">
+								</div>
+								<div class="form-question__line">
+									<label for="lastname">Last Name*</label>
+									<input id="lastname" required autocomplete="off" type="text" name="lastname"
+										placeholder="Your last name" class="form-question__input">
+								</div>
+								<div class="form-question__line">
+									<label for="email">Email*</label>
+									<input id="email" required autocomplete="off" type="email" name="email"
+										placeholder="Your working email" class="form-question__input">
+								</div>
+								<div class="form-question__line">
+									<label for="phone">Phone</label>
+									<input id="phone" autocomplete="off" type="tel" name="phone"
+										placeholder="Your phone number" class="form-question__input">
+								</div>
+								<div class="form-question__line-message">
+									<label for="message">Message*</label>
+									<textarea name="message" id="message" autocomplete="off" placeholder="Your message"
+										required class="form-question__line-textarea"></textarea>
+								</div>
+								<div class="form-question__checkbox">
+									<input id="checkbox" required class="checkbox__input" type="checkbox" value="1" name="checkbox">
+									<label for="checkbox" class="checkbox__label"><span class="checkbox__text">I agree to receive communications from Createx Online School</span></label>
+								</div>
+								<div class="form-question__button">
+									<button type="submit" class="button">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
